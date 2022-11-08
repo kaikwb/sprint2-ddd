@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="github.mvallim.emv.qrcode" type="repository">
+    <properties maven-id="com.github.mvallim:emv-qrcode:0.1.2" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/emv-qrcode-0.1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-lang3-3.11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-codec-1.14.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/java-fluent-validator-1.9.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/aspectjrt-1.9.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/aspectjweaver-1.9.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
