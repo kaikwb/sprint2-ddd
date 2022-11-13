@@ -70,7 +70,7 @@ public class User {
                 Utils.dateFromDbFormat(rs.getString(7)), dba);
     }
 
-    public static List<User> loadAllUsers(DatabaseAssistent dba) throws SQLException, ParseException {
+    public static User[] loadAllUsers(DatabaseAssistent dba) throws SQLException, ParseException {
         if (!dba.checkTableExists(table_name))
             createTable(dba);
 
@@ -83,7 +83,7 @@ public class User {
                 users.add(createFromResultSet(dba, rs));
             }
 
-            return users;
+            return users.toArray(User[]::new);
         }
 
         return null;

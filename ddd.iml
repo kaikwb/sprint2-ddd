@@ -7,9 +7,11 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="sqlite-jdbc-3.39.3.0" level="project" />
+    <orderEntry type="library" name="sqlite-jdbc-3.39.3.0" level="project" />
     <orderEntry type="library" exported="" name="slf4j.simple" level="project" />
     <orderEntry type="library" exported="" name="yahoofinance.api.YahooFinanceAPI" level="project" />
     <orderEntry type="library" exported="" name="github.mvallim.emv.qrcode" level="project" />
+    <orderEntry type="library" exported="" name="de.vandermeer.asciitable" level="project" />
+    <orderEntry type="library" exported="" name="xerial.sqlite.jdbc" level="project" />
   </component>
 </module>

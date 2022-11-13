@@ -106,4 +106,8 @@ public class Pix {
     public String getBrCode() {
         return br_code;
     }
+
+    public boolean verifyPayment() {
+        return true;
+    }
 }
