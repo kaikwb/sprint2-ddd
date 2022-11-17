@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component inherit-compiler-output="true" inheritJdk="true">
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<levels>
+		<level name="xerial.sqlite.jdbc" value="project"/>
+		<level name="de.vandermeer.asciitable" value="project"/>
+		<level name="yahoofinance.api.YahooFinanceAPI" value="project"/>
+		<level name="github.mvallim.emv.qrcode" value="project"/>
+		<level name="slf4j.simple" value="project"/>
+	</levels>
+</component>

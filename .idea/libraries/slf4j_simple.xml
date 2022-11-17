@@ -1,11 +1,17 @@
 <component name="libraryTable">
   <library name="slf4j.simple" type="repository">
-    <properties maven-id="org.slf4j:slf4j-simple:2.0.3" />
+    <properties maven-id="org.slf4j:slf4j-simple:1.6.0" />
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/lib/slf4j-simple-2.0.3.jar!/" />
-      <root url="jar://$PROJECT_DIR$/lib/slf4j-api-2.0.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-simple-1.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-api-1.6.0.jar!/" />
     </CLASSES>
-    <JAVADOC />
-    <SOURCES />
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-simple-1.6.0-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-api-1.6.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-simple-1.6.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-api-1.6.0-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="xerial.sqlite.jdbc">
+    <archive path="C:/work/sprint2-ddd/lib/sqlite-jdbc-3.39.4.0.jar" />
+  </library>
+  <library name="de.vandermeer.asciitable">
+    <archive path="C:/work/sprint2-ddd/lib/asciitable-0.3.2.jar" />
+    <archive path="C:/work/sprint2-ddd/lib/ascii-utf-themes-0.0.1.jar" />
+    <archive path="C:/work/sprint2-ddd/lib/skb-interfaces-0.0.1.jar" />
+    <archive path="C:/work/sprint2-ddd/lib/commons-lang3-3.4.jar" />
+    <archive path="C:/work/sprint2-ddd/lib/ST4-4.0.8.jar" />
+    <archive path="C:/work/sprint2-ddd/lib/antlr-runtime-3.5.2.jar" />
+    <archive path="C:/work/sprint2-ddd/lib/antlr4-4.5.1.jar" />
+    <archive path="C:/work/sprint2-ddd/lib/slf4j-api-1.7.12.jar" />
+    <archive path="C:/work/sprint2-ddd/lib/char-translation-0.0.2.jar" />
+  </library>
+  <library name="yahoofinance.api.YahooFinanceAPI">
+    <archive path="C:/work/sprint2-ddd/lib/YahooFinanceAPI-3.17.0.jar" />
+    <archive path="C:/work/sprint2-ddd/lib/slf4j-api-1.7.25.jar" />
+    <archive path="C:/work/sprint2-ddd/lib/jackson-databind-2.12.6.1.jar" />
+    <archive path="C:/work/sprint2-ddd/lib/jackson-annotations-2.12.6.jar" />
+    <archive path="C:/work/sprint2-ddd/lib/jackson-core-2.12.6.jar" />
+  </library>
+  <library name="github.mvallim.emv.qrcode">
+    <archive path="C:/work/sprint2-ddd/lib/emv-qrcode-0.1.2.jar" />
+    <archive path="C:/work/sprint2-ddd/lib/commons-lang3-3.11.jar" />
+    <archive path="C:/work/sprint2-ddd/lib/commons-codec-1.14.jar" />
+    <archive path="C:/work/sprint2-ddd/lib/java-fluent-validator-1.9.3.jar" />
+    <archive path="C:/work/sprint2-ddd/lib/aspectjrt-1.9.6.jar" />
+    <archive path="C:/work/sprint2-ddd/lib/aspectjweaver-1.9.6.jar" />
+  </library>
+  <library name="slf4j.simple">
+    <archive path="C:/work/sprint2-ddd/lib/slf4j-simple-1.6.0.jar" />
+    <archive path="C:/work/sprint2-ddd/lib/slf4j-api-1.6.0.jar" />
+  </library>
+</eclipse-userlibraries>
+
