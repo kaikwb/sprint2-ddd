@@ -13,13 +13,13 @@ import java.util.List;
 public class User {
     private static final String table_name = "Users";
     private final int user_code;
+    private final DatabaseAssistent dba;
     private String name;
     private String last_name;
     private String mail;
     private String password;
     private boolean is_subscriber;
     private Date subscription_date;
-    private final DatabaseAssistent dba;
 
     private User(int user_code, String name, String last_name, String mail, String password, boolean is_subscriber, Date subscription_date, DatabaseAssistent dba) {
         this.user_code = user_code;
@@ -95,8 +95,8 @@ public class User {
 
         String sql_update = String.format(
                 "UPDATE %s " +
-                "SET name='%s', last_name='%s', mail='%s', password='%s', is_subscriber=%d, subscription_date='%s' " +
-                "WHERE user_id=%d;",
+                        "SET name='%s', last_name='%s', mail='%s', password='%s', is_subscriber=%d, subscription_date='%s' " +
+                        "WHERE user_id=%d;",
                 table_name,
                 name, last_name, mail, password, is_subscriber ? 1 : 0, Utils.dateToDbDate(subscription_date),
                 user_code

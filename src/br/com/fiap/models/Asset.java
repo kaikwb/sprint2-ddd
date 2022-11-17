@@ -3,7 +3,6 @@ package br.com.fiap.models;
 import br.com.fiap.data_sources.YahooFinanceDS;
 import br.com.fiap.utils.Utils;
 
-import javax.sql.DataSource;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.text.ParseException;
@@ -14,7 +13,7 @@ import java.util.List;
 public class Asset {
     private static final String table_name = "Assets";
     private final YahooFinanceDS data_source;
-    private int asset_code;
+    private final int asset_code;
     private final String name;
     private final String ticker;
     private final String sector;
@@ -55,7 +54,7 @@ public class Asset {
 
         String sql_insert = String.format(
                 "INSERT INTO %s (name, ticker, sector, ipo_date) " +
-                    "VALUES ('%s', '%s', '%s', '%s');", table_name, name, ticker, sector, Utils.dateToDbDate(ipo_date)
+                        "VALUES ('%s', '%s', '%s', '%s');", table_name, name, ticker, sector, Utils.dateToDbDate(ipo_date)
         );
 
         int asset_code = dba.executeInset(sql_insert);
@@ -94,8 +93,8 @@ public class Asset {
 
         String sql_update = String.format(
                 "UPDATE %s " +
-                    "SET name='%s', ticker='%s', sector='%s', ipo_date='%s' " +
-                    "WHERE asset_id=%d;",
+                        "SET name='%s', ticker='%s', sector='%s', ipo_date='%s' " +
+                        "WHERE asset_id=%d;",
                 table_name,
                 name, ticker, sector, Utils.dateToDbDate(ipo_date),
                 asset_code

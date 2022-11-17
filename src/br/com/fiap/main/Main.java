@@ -1,9 +1,7 @@
 package br.com.fiap.main;
 
 import br.com.fiap.assets_calc.AssetsCalc;
-import br.com.fiap.data_sources.YahooFinanceDS;
 import br.com.fiap.models.Asset;
-import br.com.fiap.models.AssetPrice;
 import br.com.fiap.models.DatabaseAssistent;
 import br.com.fiap.models.User;
 import br.com.fiap.payment.Card;
@@ -15,10 +13,7 @@ import javax.swing.*;
 import java.sql.SQLException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Date;
-import java.util.List;
-import java.util.Scanner;
 
 enum OPTIONS {
     EXIT_SYSTEM, CREATE_USER, LIST_USERS, CREATE_ASSET, LIST_ASSETS, CALC_CORRELATION, CREATE_PIX_PAYMENT, PAY_CARD_BILL;
@@ -26,7 +21,7 @@ enum OPTIONS {
     public static OPTIONS fromInt(int code) {
         return values()[code];
     }
-};
+}
 
 public class Main {
     private static final String DB_FILE = "db.sqlite3";
@@ -114,14 +109,14 @@ public class Main {
     private static void calcCorrelation() throws SQLException, ParseException {
         Asset[] assets = Asset.loadAllAsset(dba);
 
-        StringBuilder msg = new StringBuilder("");
+        StringBuilder msg = new StringBuilder();
 
         for (int i = 0; i < assets.length; i++) {
             msg.append(String.format("%2d: %s - %s\r\n", i, assets[i].getTicker(), assets[i].getName()));
         }
 
-        Asset asset_1 = assets[Integer.parseInt(JOptionPane.showInputDialog("Selecione um ativo na lista:\r\n" + msg.toString()))];
-        Asset asset_2 = assets[Integer.parseInt(JOptionPane.showInputDialog("Selecione outro ativo na lista:\r\n" + msg.toString()))];
+        Asset asset_1 = assets[Integer.parseInt(JOptionPane.showInputDialog("Selecione um ativo na lista:\r\n" + msg))];
+        Asset asset_2 = assets[Integer.parseInt(JOptionPane.showInputDialog("Selecione outro ativo na lista:\r\n" + msg))];
 
         Date date_start = inputDate("Selecione a data de inicio do calculo (dd/mm/aaaa): ");
         Date date_end = inputDate("Selecione a data final do calculo (dd/mm/aaaa): ");

@@ -4,8 +4,8 @@ import java.sql.*;
 import java.util.Objects;
 
 public class DatabaseAssistent {
-    private Connection conn;
-    private Statement stm;
+    private final Connection conn;
+    private final Statement stm;
 
     public DatabaseAssistent(String db_file) throws SQLException {
         this.conn = DriverManager.getConnection("jdbc:sqlite:" + db_file);
